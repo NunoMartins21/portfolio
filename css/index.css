@@ -1,13 +1,13 @@
 @font-face {
     font-family: Nexa;
     font-weight: light;
-    src: url("../ttf/Nexa Light.otf") format("opentype");
+    src: url("../fonts/Nexa Light.otf") format("opentype");
 }
 
 @font-face {
     font-family: Nexa;
     font-weight: bold;
-    src: url("../ttf/Nexa Bold.otf") format("opentype");
+    src: url("../fonts/Nexa Bold.otf") format("opentype");
 }
 
 body {
@@ -41,21 +41,21 @@ body {
 #main-hello {
 	font-family: Nexa;
 	font-weight: bold;
-	font-size: 95.96pt;
+	font-size: 80pt;
 	margin-bottom: -40px;
 }
 
 #main-iam {
 	font-family: Nexa;
 	font-weight: light;
-	font-size: 60pt;
+	font-size: 45pt;
 }
 
 
 #main p {
 	font-family: Nexa;
 	font-weight: light;
-	font-size: 21pt;
+	font-size: 16pt;
 	margin-bottom: -10px;
 }
 
@@ -99,25 +99,26 @@ body {
 	margin-bottom: 50px;
 }
 
-#projects a img {
-	-webkit-transition: all 1s ease; /* Safari and Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* IE 9 */
-    -o-transition: all 1s ease; /* Opera */
-    transition: all 1s ease;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    height: 100%;
-    margin-bottom: 50px;
+.carousel-control, .carousel img {
+	border-radius: 20px;
 }
 
-#projects a:hover img {
-	-webkit-transform:scale(1.20); /* Safari and Chrome */
-    -moz-transform:scale(1.20); /* Firefox */
-    -ms-transform:scale(1.20); /* IE 9 */
-    -o-transform:scale(1.20); /* Opera */
-    transform:scale(1.20);
-    z-index: 5;
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    width:100%
+}
+
+.carousel-caption {
+	background: linear-gradient(to top,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+	max-width: 100%;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	border-radius: 20px;
+}
+
+.carousel-indicators {
+	bottom: 0px;
 }
 
 /* ==== */
@@ -138,6 +139,7 @@ body {
 	border-radius: 20px;
 	font-family: Nexa;
 	font-weight: light;
+	margin-bottom: 20px;
 }
 
 #btnTwitter {
